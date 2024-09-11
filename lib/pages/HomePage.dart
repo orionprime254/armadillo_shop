@@ -74,6 +74,11 @@ class _HomePageState extends State<HomePage> {
                 'Trending...',
                 style: TextStyle(fontWeight: FontWeight.w300),
               ),
+              // GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              //   crossAxisCount: 2,
+              //   mainAxisSpacing: 10
+              // ))
+
             ],
           ),
         ));

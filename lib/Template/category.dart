@@ -31,24 +31,29 @@ class CategoryTile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Color(0xFFFFFFFF),
-                          borderRadius: BorderRadius.circular(48),
-                        ),
-                        child: Image.asset(
-                          imagePath,
-                          height: 40,
-                          width: 40,
+                      Center(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Color(0xFFFFFFFF),
+                            borderRadius: BorderRadius.circular(48),
+                          ),
+                          child: Image.asset(
+
+                            imagePath,
+                            height: 40,
+                            width: 40,
+                          ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.fromLTRB(0, 8, 0, 7),
-                        child: Text(
-                          categoryName,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 12,
+                      Center(
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0, 8, 0, 7),
+                          child: Text(
+                            categoryName,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12,
+                            ),
                           ),
                         ),
                       ),
